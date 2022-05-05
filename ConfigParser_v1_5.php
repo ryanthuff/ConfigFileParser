@@ -4,8 +4,8 @@
  * Title: Config File Parser
  * Purpose: Parse text based files and extract specific data
  * 
- * Version: 1.0
- * Publish Date: 04-01-2022
+ * Version: 1.5
+ * Original Creation  Date: 04-01-2022
  * 
  * Author: Ryan Huff
  * Email: configfileparser@ryanthomashuff.com
