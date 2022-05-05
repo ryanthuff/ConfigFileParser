@@ -4,7 +4,7 @@ files of unpredictable content and length.
 
 # Usage
 Use $PriStart, $SecStart and $Stop to specify the limiter text. The limiters are the text on right and left (or top and bottom depending on how you think about it) of the text that you wish to parse. For example, if a text file contains "John and 
-his dog like to take walks" and the text I wish to parse is "dog", the primary limiter ($PriStart) would be "John and his " and the stop/ending limiter ($Stop) would be " like to take walks). Notice the " " <SPACE> character, the limiters must 
+his dog like to take walks" and the text intended to parse is "dog", the primary limiter ($PriStart) would be "John and his " and the stop/ending limiter ($Stop) would be " like to take walks). Notice the " " <SPACE> character, the limiters must 
 include EVERY character upto the first and last character of the parsed text. 
 
 # Notes
