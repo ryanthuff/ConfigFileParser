@@ -2,7 +2,7 @@
 /**
  * 
  * Title: Config File Parser
- * Purpose: Parse auto-generated configuration files for Palo Alto Prisma SD-WAN ION appliances
+ * Purpose: Parse text based files and extract specific data
  * 
  * Version: 1.0
  * Publish Date: 04-01-2022
