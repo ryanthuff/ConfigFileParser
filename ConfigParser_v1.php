@@ -21,13 +21,15 @@ class ConfigParser_v1 {
     var $OutputFilename = "ParsedOutput_"; //NAME OF OUTPUT CSV FILE
     
     public function __construct() {
-        $ConfigFiles = array_diff(scandir($this->ConfigDir), array('.', '..'));
+        //ITERATION IS DONE FOR EACH FILE IN THE "$ConfigDir" FOLDER (EXCEPT '.' AND '..') AND A KEY=>VALUE PAIR ARRAY IS CREATED.
+	$ConfigFiles = array_diff(scandir($this->ConfigDir), array('.', '..'));
         foreach ($ConfigFiles as $item) {
             $this->sitelist[$item] = rtrim($item, $this->ConfigFileExt);
         }
     }
     
     function getBetween($string, $start = "", $end = ""){
+	//PARSER LOGIC THAT RETURNS THE SUBSTRING VALUE BETWEEN TWO OTHER VALUES IN THE PARENT STRING
         if (strpos($string, $start)) {
             $startCharCount = strpos($string, $start) + strlen($start);
             $firstSubStr = substr($string, $startCharCount, strlen($string));
